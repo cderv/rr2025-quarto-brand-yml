@@ -1,0 +1,343 @@
+---
+pagetitle: "Personnaliser ses documents Quarto avec _brand.yml"
+date: 2025-05-20
+lang: fr
+format:
+  clean-revealjs:
+    width: 1280
+    height: 720
+    theme: [default, reveal-style.scss]
+    # footer: Follow along at <https://cderv.github.io/user2024-quarto-talk/> and <https://quarto.org>
+    code-line-numbers: false
+    slide-number: true
+    mermaid-format: png
+    preview-links: auto
+    multiplex: false
+    include-after-body: 
+      - revealjs-tweak.html
+    logo: images/RR2025hexa.png
+revealjs-plugins:
+  - attribution
+---
+
+# {#title-slide .quarto-title-block .center}
+
+```{=html}
+<h1 class='title'>Personnaliser ses documents Quarto</h1>
+<p class='subtitle'>A la découverte de `_brand.yml`</p>
+```
+
+![](images/RR2025hexa.png){.absolute right='400px' bottom='-50px' width="20%"}
+
+::: {.quarto-title-authors}
+::: {.quarto-title-author}
+::: {.quarto-title-author-name}
+Christophe Dervieux
+`<p class="quarto-title-affiliation">Posit PBC</p>`{=html}
+:::
+:::
+:::
+
+{{< meta date >}}
+
+#
+
+::: {style="text-align: center;"}
+![](https://quarto.org/quarto.png){fig-alt="Quarto logo" height="20%"}  
+:::
+
+Un système de publication scientifique et technique open-source, intégrant l'exécution de code.
+
+**Quarto est l'évolution de R Markdown**
+
+- il unifie et améliore l'écosystème R Markdown, pour les utilsateurs R.
+- il l'étend pour les personnes qui ne connaissent pas R Markdown (Python, Julia, Observable, ...)
+
+![](images/horst_quarto_schematic.png){fig-alt="Un schéma représentant la polyvalence de Quarto avec des entrées multi-langages (comme Python, R, Observable, Julia) et des sorties multi-formats (comme PDF, html, documents Word, et plus)." fig-align="center" width="50%"}
+
+::: {.attribution}
+[Issue de la présentation "Hello, Quarto" par Julia Lowndes et Mine Çetinkaya-Rundel, présentée à la RStudio::conf(2022). Illustrée par Allison Horst.]{.small-cap}
+:::
+
+# Produire des HTML {.center transition="convex"}
+
+::: {.fragment .bigger}
+```{.yaml}
+---
+format: html
+---
+```
+:::
+
+## {background-image="images/html-no-brand.gif" background-size="contain" background-transition="concave"}
+
+# Produire des PDF {.center transition="convex"}
+
+::: {.fragment .bigger}
+```{.yaml}
+---
+format: typst
+---
+```
+:::
+
+## {background-image="images/typst-no-brand.gif" background-size="contain" background-transition="concave"}
+
+# Déja bien, mais... {transition="convex"}
+
+::: {.bigger}
+Les organisations ont besoin de **personnaliser** leurs documents selon leur **charte graphique**.
+:::
+
+## {background-image="images/design-systems.png" background-size="cover" background-transition="concave"}
+
+::: {.notes}
+Source: https://slides.garrickadenbuie.com/brand-yml-shiny/
+:::
+
+# Prenons un exemple {auto-animate="true"}
+
+::: {#logo-pulse}
+:::
+
+# Prenons un exemple {auto-animate="true"}
+
+::: {#logo-pulse style="text-align: center;"}
+![](images/logomark-full-color.png)
+:::
+
+## {background-image="images/brand-guidelines.gif" background-size="contain" background-transition="concave"}
+
+## {background-iframe="./images/Pulse Mobile Brand Guidelines.pdf" background-interactive="true" visibility="hidden"}
+
+# {transition="convex" transition-speed="slow"}
+
+![](images/brand-yml-wide-color.svg)
+
+::: {.notes}
+Source: https://slides.garrickadenbuie.com/brand-yml-shiny/
+:::
+
+
+# Produire des HTML avec `_brand.yml` { transition="convex"}
+
+::: {.fragment .bigger}
+```{.yaml}
+---
+format: html
+---
+```
+:::
+
+## {background-image="images/html-with-brand.gif" background-size="contain" background-transition="concave"}
+
+# Produire des PDF avec `_brand.yml` {transition="convex"}
+
+::: {.fragment .bigger}
+```{.yaml}
+---
+format: typst
+---
+```
+:::
+
+## {background-image="images/typst-with-brand.gif" background-size="contain" background-transition="concave"}
+
+# `_brand.yml`
+
+1. Créez un fichier `_brand.yml` dans votre projet
+2. Définissez les couleurs, les polices, les logos, etc.
+3. Il pourra être utilisé par tous les outils supportant `_brand.yml`
+
+## {.bigger auto-animate="true"}
+
+```{.yml filename="_brand.yml"}
+meta:
+
+```
+
+## {.bigger auto-animate="true"}
+
+```{.yml filename="_brand.yml"}
+meta:
+
+color:
+```
+
+## {.bigger auto-animate="true"}
+
+```{.yml filename="_brand.yml"}
+meta:
+
+color:
+
+typography:
+```
+
+## {.bigger auto-animate="true"}
+
+```{.yml filename="_brand.yml"}
+meta:
+
+color:
+
+typography:
+
+logo:
+```
+
+::: fragment
+[posit-dev.github.io/brand-yml/brand/](https://posit-dev.github.io/brand-yml/brand/)
+:::
+
+
+## Pulse Mobile Brand {.bigger}
+
+```{.yml filename="_brand.yml" code-line-numbers="1-3|5-15|17-31|33-40"}
+meta:
+  name: Pulse Mobile
+  link: https://pulse.mobile
+
+color:
+  palette:
+    purple: "#8a2be2"
+    blue: "#00c2ff"
+    green: "#4dc964"
+    yellow: "#ffd600"
+    red: "#ff5a5f"
+    black: "#121212"
+    white: "#f8f8f8"  
+  primary: purple
+  info: blue
+  
+typography:
+  fonts:
+    - family: Montserrat Alternates
+      source: google
+    - family: Montserrat
+      source: google
+    - family: Space Mono
+      source: google
+  base: Montserrat
+  headings: 
+    family: Montserrat Alternates
+    weight: 500
+  monospace: Space Mono
+  monospace-inline:
+    color: purple
+
+logo: 
+  images:
+    full-color: logos/logomark-full-color.png
+    med-color: logos/logomark-med-color.png
+    icon-color: logos/icon-color.png
+  small: icon-color
+  medium: med-color
+  large: full-color
+```
+
+# {transition="convex"}
+
+![](images/brand-to-yml.excalidraw.svg){.illustration}
+
+::: {.footer}
+From ['Theming Made Easy: Introducing Brand YAML for Shiny'](https://slides.garrickadenbuie.com/brand-yml-shiny/) by Garrick Aden-Buie 
+:::
+
+
+## Un seul fichier à réutiliser {.make-h1}
+
+::: {.fragment}
+![quarto hexsticker](https://raw.githubusercontent.com/rstudio/hex-stickers/refs/heads/main/SVG/quarto.svg){height=2em style="vertical-align: middle;margin-right: 0.5em;"}[Quarto: document, websites, slides](https://quarto.org/docs/authoring/brand.html)  
+:::
+::: {.fragment}
+![shiny hexsticker](https://raw.githubusercontent.com/rstudio/hex-stickers/refs/heads/main/SVG/shiny.svg){height=2em style="vertical-align: middle;margin-right: 0.5em;"} [Shiny for R](https://shiny.posit.co/blog/posts/bslib-0.9.0/)  & [Shiny for Python](https://shiny.posit.co/blog/posts/shiny-python-1.2-brand-yml/)  
+:::
+::: {.fragment}
+![bslib hexsticker](https://raw.githubusercontent.com/rstudio/hex-stickers/refs/heads/main/SVG/bslib.svg){height=2em style="vertical-align: middle;margin-right: 0.5em;"} [bslib](https://rstudio.github.io/bslib/articles/brand-yml/index.html)  
+:::
+::: {.fragment}
+![rmarkdown hexsticker](https://raw.githubusercontent.com/rstudio/hex-stickers/refs/heads/main/SVG/rmarkdown.svg){height=2em style="vertical-align: middle;margin-right: 0.5em;"} Rapports R Markdown 
+
+![pkgdown hexsticker](https://raw.githubusercontent.com/rstudio/hex-stickers/refs/heads/main/SVG/pkgdown.svg){height=2em style="vertical-align: middle;margin-right: 0.5em;"} Sites web de documentation de package avec `pkgdown`
+:::
+
+## Un seul fichier à réutiliser {.make-h1}
+
+::: {.bottom-pad .bigger style="margin-top: 2rem;"}
+```{.r filename="lire _brand.yml avec bslib"}
+brand <- attr(bslib::bs_theme(), "brand") 
+```
+:::
+
+## Un seul fichier à réutiliser {.make-h1}
+
+::: {.bottom-pad style="margin-top: 2rem;"}
+```{.r filename="lire _brand.yml avec bslib"}
+brand <- attr(bslib::bs_theme(), "brand") 
+```
+:::
+
+::: {data-id="code-block" style="font-size: 2.5rem; margin-top: 2rem;"}
+
+```{.r filename="avec gt"}
+  gt_tab |>
+    gt::tab_style(
+      style = cell_fill(color = brand$color$palette$blue),
+      locations = cells_title()
+    ) |>
+    tab_style(
+      style = cell_text(color = brand$color$palette$purple),
+      locations = cells_stub()
+    )
+```
+:::
+
+## Un seul fichier à réutiliser {.make-h1}
+
+::: {.bottom-pad style="margin-top: 2rem;"}
+```{.r filename="lire _brand.yml avec bslib"}
+brand <- attr(bslib::bs_theme(), "brand") 
+```
+:::
+
+::: {data-id="code-block" style="font-size: 2.5rem; margin-top: 2rem;"}
+
+```{.r filename="avec ggplot2"}
+  ggplot_object +
+    scale_color_manual(
+      values = c("Participants" = brand$color$palette$blue),
+      name = NULL
+    ) +
+    scale_fill_manual(
+      values = c("Events" = brand$color$palette$purple),
+      name = NULL
+    )
+```
+:::
+
+## Un seul fichier à réutiliser {.make-h1}
+
+::: {.incremental .bigger}
+- Positron, VS Code, RStudio
+
+- `brand_yml` [Python package](https://pypi.org/project/brand-yml/)
+
+- `brand.yml` [R package [(en development)]{.make-smaller}](https://github.com/posit-dev/brand-yml/pull/79)
+:::
+
+# En savoir plus sur brand.yml
+
+::: r-fit-text
+- [posit-dev.github.io/brand-yml](https://posit-dev.github.io/brand-yml){style="text-decoration: none"}
+- [posit-dev/brand-yml](https://github.com/posit-dev/brand-yml){style="text-decoration: none"}
+- [posit.co/blog/unified-branding...](https://posit.co/blog/unified-branding-across-posit-tools-with-brand-yml/){style="text-decoration: none"}
+:::
+
+## Questions? {.center .bigger}
+
+Merci! 
+
+::: {.make-smaller}
+And thanks to [Garrick Aden-Buie](https://www.garrickadenbuie.com/) letting me reuse part of ['Theming Made Easy: Introducing Brand YAML for Shiny'](https://slides.garrickadenbuie.com/brand-yml-shiny/) examples.
+:::

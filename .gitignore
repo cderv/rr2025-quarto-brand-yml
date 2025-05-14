@@ -1,0 +1,4 @@
+/.quarto/
+*_files
+*.html
+!revealjs-tweak.html

@@ -1,0 +1,79 @@
+---
+title: "Personnalisation de documents Quarto avec `_brand.yml`"
+author:
+- Christophe Dervieux^[Posit PBC, cderv@posit.co]
+output: pdf_document
+indent: true
+bibliography: ref.bib
+---
+
+\begin{center}
+\textbf{Résumé (max 300 mots)}
+\end{center}
+Dans le domaine de la recherche et de l'analyse de données, la présentation
+cohérente des résultats est cruciale pour transmettre efficacement des
+informations. Ce talk vous plongera dans la fonctionnalité
+innovante `_brand.yml` de Quarto, qui permet de personnaliser facilement
+l'apparence de vos documents tout en respectant les lignes directrices de votre
+organisation.
+
+Que vous soyez utilisateur confirmé de Quarto ou que vous découvriez cet outil
+pour la première fois, cette session mettra en lumière les avantages pratiques
+d'utiliser `_brand.yml`. À travers des exemples concrets et des démonstrations,
+nous explorerons comment un simple fichier YAML peut intégrer logos, couleurs et
+typographies, facilitant ainsi la création de rapports, tableaux de bord et
+présentations attrayants et professionnels.
+
+L'objectif est de montrer comment cette fonctionnalité peut transformer vos
+projets en rendant vos documents plus cohérents avec l'identité visuelle de
+votre organisation, tout en simplifiant le processus de personnalisation. Vous
+verrez comment `_brand.yml` permet non seulement d'harmoniser vos travaux
+existants, mais aussi de pouvoir réutiliser votre configuration pour d'autres
+types de project, `_brand.yml` étant supporté par d'autres outils (ex. Shiny).
+
+En fin de compte, cette présentation vise à susciter votre curiosité pour
+essayer cette fonctionnalité dans vos propres projets et à découvrir comment
+Quarto peut améliorer votre flux de travail.
+
+\noindent \textbf{Mots-clefs (3 à 5)} : Quarto - Personnalisation - Visualisation - Rapports - Reproductibilité
+
+## Développement
+
+### Introduction à Quarto et à `_brand.yml`
+
+Cette présentation débutera par une introduction à Quarto
+(@Allaire_Quarto_2024), un outil open source qui facilite la création de
+documents dynamiques. La fonctionnalité `_brand.yml` (@posit_brand_yml) sera ensuite présentée de
+manière générale.
+
+### Comment utiliser `_brand.yml` avec Quarto
+
+Une démonstration sera réalisée pour créer un fichier `_brand.yml` pour utiliser avec Quarto (@quarto_brand). Les points
+suivants seront couverts :
+
+- Les configurations possibles (logos, couleurs, typographies...)
+
+- L'impact de ces personnalisations sur l'apparence des documents Quarto,
+
+- La réutilisation de cette configuration pour différents formats et projets, soulignant la flexibilité offerte par cette approche.
+
+Des exemples concrets montreront comment d'autres chercheurs et analystes
+utilisent `_brand.yml` pour rendre leurs documents plus cohérents et attrayants.
+
+### Comment bénéficier au maximum de `_brand.yml`
+
+Cette section explorera comment maximiser l'utilisation de `_brand.yml`. On
+discutera des meilleures pratiques pour structurer le fichier, ainsi que des
+options disponibles pour personnaliser les éléments d'identité visuelle. I s'agira de voir comment intégrer
+dans différents projets pour bien réutiliser son identité visuelle.
+
+### Conclusion et perspectives
+
+La présentation sera conclue par un récapitulatif des points essentiels, mettant
+en lumière l'importance de `_brand.yml` pour personnaliser de manière cohérente
+divers projets. Des pistes seront également suggérées pour explorer
+l'utilisation de cette fonctionnalité avec d'autres outils, telle que Shiny,
+favorisant une approche intégrée dans la communication via des publications.
+
+## Références
+
