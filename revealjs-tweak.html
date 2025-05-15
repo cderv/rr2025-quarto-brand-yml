@@ -2,7 +2,7 @@
   Reveal.on('ready', (event) => {
     if (event.indexh === 0) {
         console.log("Hiding logo")
-        document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+        document.querySelector("div.has-logo > img.slide-logo").style.setProperty('display', 'none', 'important');
     }
     // tweak r-vtack with image
     var slides = Reveal.getSlidesElement();
@@ -25,7 +25,7 @@
   Reveal.addEventListener('slidechanged', (event) => {
     if (event.indexh === 0) {
       console.log("Hiding logo")
-      document.querySelector("div.has-logo > img.slide-logo").style.display = "none";
+      document.querySelector("div.has-logo > img.slide-logo").style.setProperty('display', 'none', 'important');
     }
     if (event.indexh === 1) { 
       console.log("Showing logo")

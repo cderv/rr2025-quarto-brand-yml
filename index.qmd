@@ -8,7 +8,7 @@ format:
     width: 1280
     height: 720
     theme: [default, reveal-style.scss]
-    # footer: Follow along at <https://cderv.github.io/user2024-quarto-talk/> and <https://quarto.org>
+    footer: Follow along at <https://cderv.github.io/rr2025-quarto-brand-yml/> and <https://quarto.org>
     code-line-numbers: false
     slide-number: true
     mermaid-format: png
@@ -456,7 +456,7 @@ brand <- attr(bslib::bs_theme(), "brand")
 
 - `brand_yml` [Python :package:](https://pypi.org/project/brand-yml/)
 
-- `brand.yml` [R :package: [(en development)]{.make-smaller}](https://github.com/posit-dev/brand-yml/pull/79)
+- `brand.yml` [R :package: [(en projet)]{.make-smaller}](https://github.com/posit-dev/brand-yml/pull/79)
 :::
 
 # En savoir plus sur brand.yml
@@ -469,7 +469,7 @@ brand <- attr(bslib::bs_theme(), "brand")
 
 ## Questions? {.center .bigger}
 
-Merci! 
+[Merci!]{.fg}
 
 ::: {.make-smaller}
 And thanks to [Garrick Aden-Buie](https://www.garrickadenbuie.com/) letting me reuse part of ['Theming Made Easy: Introducing Brand YAML for Shiny'](https://slides.garrickadenbuie.com/brand-yml-shiny/) examples.

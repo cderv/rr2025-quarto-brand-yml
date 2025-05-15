@@ -188,21 +188,21 @@ section#diagrams {
 
 // Move "hamburger" back left
 
-.reveal .slide-menu-button {
-  position: fixed;
-  top: unset;
-  right: unset;
-  bottom: 6px;
-  left: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  pointer-events: none;
-}
+// .reveal .slide-menu-button {
+//   position: fixed;
+//   top: unset;
+//   right: unset;
+//   bottom: 6px;
+//   left: 0;
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: flex-start;
+//   pointer-events: none;
+// }
 
 // Hide logo on first slide 
-.reveal #title-slide {
-  .slide-logo {
-    display: none;
-  }
-}
+// .reveal #title-slide {
+//   .slide-logo {
+//     display: none;
+//   }
+// }
