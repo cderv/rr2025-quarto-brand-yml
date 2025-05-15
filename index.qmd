@@ -41,7 +41,7 @@ Christophe Dervieux
 
 {{< meta date >}}
 
-#
+## {footer=false}
 
 ::: {style="text-align: center;"}
 ![](https://quarto.org/quarto.png){fig-alt="Quarto logo" height="20%"}  
@@ -54,10 +54,10 @@ Un système de publication scientifique et technique open-source, intégrant l'e
 - il unifie et améliore l'écosystème R Markdown, pour les utilsateurs R.
 - il l'étend pour les personnes qui ne connaissent pas R Markdown (Python, Julia, Observable, ...)
 
-![](images/horst_quarto_schematic.png){fig-alt="Un schéma représentant la polyvalence de Quarto avec des entrées multi-langages (comme Python, R, Observable, Julia) et des sorties multi-formats (comme PDF, html, documents Word, et plus)." fig-align="center" width="50%"}
+![](images/horst_quarto_schematic.png){fig-alt="Un schéma représentant la polyvalence de Quarto avec des entrées multi-langages (comme Python, R, Observable, Julia) et des sorties multi-formats (comme PDF, html, documents Word, et plus)." fig-align="center" width="40%"}
 
 ::: {.attribution}
-[Issue de la présentation "Hello, Quarto" par Julia Lowndes et Mine Çetinkaya-Rundel, présentée à la RStudio::conf(2022). Illustrée par Allison Horst.]{.small-cap}
+[Issue de la présentation "Hello, Quarto" par Julia Lowndes et Mine Çetinkaya-Rundel, présentée à la RStudio::conf(2022). Illustrée par Allison Horst.]{style="font-size: 0.5em;"}
 :::
 
 # Produire des HTML {.center transition="convex"}
@@ -70,7 +70,7 @@ format: html
 ```
 :::
 
-## {background-image="images/html-no-brand.gif" background-size="contain" background-transition="concave"}
+## {background-image="images/html-no-brand.gif" background-size="contain" background-transition="concave" footer=false}
 
 # Produire des PDF {.center transition="convex"}
 
@@ -82,7 +82,7 @@ format: typst
 ```
 :::
 
-## {background-image="images/typst-no-brand.gif" background-size="contain" background-transition="concave"}
+## {background-image="images/typst-no-brand.gif" background-size="contain" background-transition="concave" footer=false}
 
 # Déja bien, mais... {transition="convex"}
 
@@ -90,7 +90,7 @@ format: typst
 Les organisations ont besoin de **personnaliser** leurs documents selon leur **charte graphique**.
 :::
 
-## {background-image="images/design-systems.png" background-size="cover" background-transition="concave"}
+## {background-image="images/design-systems.png" background-size="cover" background-transition="concave" footer=false}
 
 ::: {.notes}
 Source: https://slides.garrickadenbuie.com/brand-yml-shiny/
@@ -107,9 +107,9 @@ Source: https://slides.garrickadenbuie.com/brand-yml-shiny/
 ![](images/logomark-full-color.png)
 :::
 
-## {background-image="images/brand-guidelines.gif" background-size="contain" background-transition="concave"}
+## {background-image="images/brand-guidelines.gif" background-size="contain" background-transition="concave" footer=false}
 
-## {background-iframe="./images/Pulse Mobile Brand Guidelines.pdf" background-interactive="true" visibility="hidden"}
+## {background-iframe="./images/Pulse Mobile Brand Guidelines.pdf" background-interactive="true" visibility="hidden" footer=false}
 
 # {transition="convex" transition-speed="slow"}
 
@@ -130,7 +130,7 @@ format: html
 ```
 :::
 
-## {background-image="images/html-with-brand.gif" background-size="contain" background-transition="concave"}
+## {background-image="images/html-with-brand.gif" background-size="contain" background-transition="concave" footer=false}
 
 # Produire des PDF avec `_brand.yml` {transition="convex"}
 
@@ -142,7 +142,7 @@ format: typst
 ```
 :::
 
-## {background-image="images/typst-with-brand.gif" background-size="contain" background-transition="concave"}
+## {background-image="images/typst-with-brand.gif" background-size="contain" background-transition="concave" footer=false}
 
 # `_brand.yml`
 
@@ -150,36 +150,53 @@ format: typst
 2. Définissez les couleurs, les polices, les logos, etc.
 3. Il pourra être utilisé par tous les outils supportant `_brand.yml`
 
-## {.bigger auto-animate="true"}
+## {auto-animate="true"}
+
+::: {.columns}
+
+::: {.bigger .column width="65%"}
 
 ```{.yml filename="_brand.yml"}
 meta:
 
 ```
+:::
+::: {.column width="35%"}
 
-::: {.make-smaller style='margin-top: 2em;'}
+::: {.make-smaller style='margin-top: 2em;' data-id="spec"}
 [`meta`]{.hl}
 :   Information de l'organization, nom de l'entreprise, URLs, etc.
 
-    Spec: <https://posit-dev.github.io/brand-yml/brand/meta.html>
+    :link: [Brand.yml meta Spec](https://posit-dev.github.io/brand-yml/brand/meta.html)
+:::
+:::
 :::
 
-## {.bigger auto-animate="true"}
+## {auto-animate="true"}
 
+::: {.columns}
+::: {.bigger .column width="65%"}
 ```{.yml filename="_brand.yml"}
 meta:
 
 color:
 ```
-::: {.make-smaller style='margin-top: 2em;'}
+:::
+::: {.column width="35%"}
+::: {.make-smaller style='margin-top: 2em;' data-id="spec"}
 [`color`]{.hl}
 :   Palette de couleurs de l'image de marque de l'organisation.
 
-    Spec: <https://posit-dev.github.io/brand-yml/brand/color.html>
+    :link: [Brand.yml Color Spec](https://posit-dev.github.io/brand-yml/brand/color.html)
+:::
+:::
 :::
 
-## {.bigger auto-animate="true"}
+## {auto-animate="true"}
 
+::: {.columns}
+
+::: {.bigger .column width="65%"}
 ```{.yml filename="_brand.yml"}
 meta:
 
@@ -187,15 +204,21 @@ color:
 
 typography:
 ```
-::: {.make-smaller style='margin-top: 2em;'}
+:::
+::: {.column width="35%"}
+::: {.make-smaller style='margin-top: 2em;' data-id="spec"}
 [`typography`]{.hl}
 :   Polices pour les différents éléments.
     
-    Spec: <https://posit-dev.github.io/brand-yml/brand/typography.html>
+    :link: [Brand.yml Typography Spec](https://posit-dev.github.io/brand-yml/brand/typography.html)
+:::
+:::
 :::
 
+## {auto-animate="true"}
 
-## {.bigger auto-animate="true"}
+::: {.columns}
+::: {.bigger .column width="65%"}
 
 ```{.yml filename="_brand.yml"}
 meta:
@@ -206,15 +229,21 @@ typography:
 
 logo:
 ```
-::: {.make-smaller style='margin-top: 2em;'}
+:::
+::: {.column width="35%"}
+::: {.make-smaller style='margin-top: 2em;' data-id="spec"}
 [`logo`]{.hl}
 :  Logos pour l'image de marque de l'organisation.
    
-   Spec: <https://posit-dev.github.io/brand-yml/brand/logo.html>
+   :link: [Brand.yml Logo Spec](https://posit-dev.github.io/brand-yml/brand/logo.html)
+:::
+:::
 :::
 
+## {auto-animate="true"}
 
-## {.bigger auto-animate="true"}
+::: {.columns}
+::: {.bigger .column width="65%"}
 
 ```{.yml filename="_brand.yml"}
 meta:
@@ -227,12 +256,16 @@ logo:
 
 defaults:
 ```
+:::
+::: {.column width="35%"}
 
-::: {.make-smaller style='margin-top: 2em;'}
+::: {.make-smaller style='margin-top: 2em;' data-id="spec"}
 [`defaults`]{.hl}
 :   Options pour support spécifiques par des outils utilsant `_brand.yml`
 
-    Spec: <https://posit-dev.github.io/brand-yml/brand/defaults.html>
+    :link: [Brand.yml Defaults Spec](https://posit-dev.github.io/brand-yml/brand/defaults.html)
+:::
+:::
 :::
 
 ## Pulse Mobile Brand {.bigger}

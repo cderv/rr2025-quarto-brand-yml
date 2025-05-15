@@ -20,6 +20,10 @@ $presentation-font-size-root: 36px !default;
   font-size: 3rem;
 }
 
+.bigger-0 {
+  font-size: 2.5rem;
+}
+
 .reveal {
   
     #title-slide .title {
@@ -183,6 +187,12 @@ section#diagrams {
   .columns .column ul {
     display: inherit;
   }
+}
+
+div.attribution {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 
