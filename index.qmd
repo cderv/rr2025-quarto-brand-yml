@@ -2,6 +2,7 @@
 pagetitle: "Personnaliser ses documents Quarto avec _brand.yml"
 date: 2025-05-20
 lang: fr
+from: markdown+emoji
 format:
   clean-revealjs:
     width: 1280
@@ -156,6 +157,13 @@ meta:
 
 ```
 
+::: {.make-smaller style='margin-top: 2em;'}
+[`meta`]{.hl}
+:   Information de l'organization, nom de l'entreprise, URLs, etc.
+
+    Spec: <https://posit-dev.github.io/brand-yml/brand/meta.html>
+:::
+
 ## {.bigger auto-animate="true"}
 
 ```{.yml filename="_brand.yml"}
@@ -163,6 +171,12 @@ meta:
 
 color:
 ```
+::: {.make-smaller style='margin-top: 2em;'}
+[`color`]{.hl}
+:   Palette de couleurs de l'image de marque de l'organisation.
+
+    Spec: <https://posit-dev.github.io/brand-yml/brand/color.html>
+:::
 
 ## {.bigger auto-animate="true"}
 
@@ -173,6 +187,13 @@ color:
 
 typography:
 ```
+::: {.make-smaller style='margin-top: 2em;'}
+[`typography`]{.hl}
+:   Polices pour les différents éléments.
+    
+    Spec: <https://posit-dev.github.io/brand-yml/brand/typography.html>
+:::
+
 
 ## {.bigger auto-animate="true"}
 
@@ -185,11 +206,34 @@ typography:
 
 logo:
 ```
-
-::: fragment
-[posit-dev.github.io/brand-yml/brand/](https://posit-dev.github.io/brand-yml/brand/)
+::: {.make-smaller style='margin-top: 2em;'}
+[`logo`]{.hl}
+:  Logos pour l'image de marque de l'organisation.
+   
+   Spec: <https://posit-dev.github.io/brand-yml/brand/logo.html>
 :::
 
+
+## {.bigger auto-animate="true"}
+
+```{.yml filename="_brand.yml"}
+meta:
+
+color:
+
+typography:
+
+logo:
+
+defaults:
+```
+
+::: {.make-smaller style='margin-top: 2em;'}
+[`defaults`]{.hl}
+:   Options pour support spécifiques par des outils utilsant `_brand.yml`
+
+    Spec: <https://posit-dev.github.io/brand-yml/brand/defaults.html>
+:::
 
 ## Pulse Mobile Brand {.bigger}
 
@@ -236,7 +280,82 @@ logo:
   large: full-color
 ```
 
-# {transition="convex"}
+## `_brand.yml` avec Quarto {.bigger}
+
+A mettre à la racine du projet Quarto
+
+````
+.
+├── report.qmd
+├── _brand.yml
+└── _quarto.yml
+````
+
+Si le fichier existe, il est automatiquement utilisé par Quarto. 
+
+::: {.footer}
+[Multiformat branding with Quarto](https://quarto.org/docs/authoring/brand.html)
+:::
+
+## `_brand.yml` avec Quarto {.bigger}
+
+Configuration dans `_quarto.yml` ou dans le document
+
+::: {.r-fit-text}
+::: {.bottom-pad .top-pad}
+````yaml
+# fichier à une place differente
+brand: brand/_brand.yml
+````
+:::
+
+::: {.bottom-pad .top-pad}
+````yaml
+# fichier avec un nom différent
+brand: brand/_brand-pulse.yml
+````
+:::
+
+::: {.bottom-pad .top-pad}
+
+```yaml
+# désactiver
+brand: false
+```
+:::
+:::
+
+::: {.footer}
+[Multiformat branding with Quarto](https://quarto.org/docs/authoring/brand.html)
+:::
+
+## `_brand.yml` avec Quarto {.bigger}
+Configuration dans `_quarto.yml` ou dans le document
+
+::: {.make-smaller}
+```yaml
+brand:
+  color:
+    palette:
+      purple: "#8a2be2"
+    primary: purple
+  typography:
+    fonts:
+      - family: Montserrat Alternates
+        source: google
+    headings: 
+      family: Montserrat Alternates
+      weight: 500
+```
+:::
+
+::: {.footer}
+[Multiformat branding with Quarto](https://quarto.org/docs/authoring/brand.html)
+:::
+
+# Pour résumer
+
+##  {transition="convex"}
 
 ![](images/brand-to-yml.excalidraw.svg){.illustration}
 
@@ -256,10 +375,24 @@ From ['Theming Made Easy: Introducing Brand YAML for Shiny'](https://slides.garr
 ::: {.fragment}
 ![bslib hexsticker](https://raw.githubusercontent.com/rstudio/hex-stickers/refs/heads/main/SVG/bslib.svg){height=2em style="vertical-align: middle;margin-right: 0.5em;"} [bslib](https://rstudio.github.io/bslib/articles/brand-yml/index.html)  
 :::
-::: {.fragment}
+
+::: {.fragment style='margin-left: 2em;'}
 ![rmarkdown hexsticker](https://raw.githubusercontent.com/rstudio/hex-stickers/refs/heads/main/SVG/rmarkdown.svg){height=2em style="vertical-align: middle;margin-right: 0.5em;"} Rapports R Markdown 
 
 ![pkgdown hexsticker](https://raw.githubusercontent.com/rstudio/hex-stickers/refs/heads/main/SVG/pkgdown.svg){height=2em style="vertical-align: middle;margin-right: 0.5em;"} Sites web de documentation de package avec `pkgdown`
+:::
+
+## Un seul fichier à réutiliser {.make-h1}
+
+::: {.bigger}
+Avec des options communes: 
+
+- Respect de la specification `_brand.yml`
+
+- Support specifiques
+  - `brand.defaults.bootstrap` pour Quarto et Shiny
+  - `brand.defaults.shiny.theme` pour Shiny
+
 :::
 
 ## Un seul fichier à réutiliser {.make-h1}
@@ -318,12 +451,12 @@ brand <- attr(bslib::bs_theme(), "brand")
 
 ## Un seul fichier à réutiliser {.make-h1}
 
-::: {.incremental .bigger}
+::: {.incremental .r-fit-text}
 - Positron, VS Code, RStudio
 
-- `brand_yml` [Python package](https://pypi.org/project/brand-yml/)
+- `brand_yml` [Python :package:](https://pypi.org/project/brand-yml/)
 
-- `brand.yml` [R package [(en development)]{.make-smaller}](https://github.com/posit-dev/brand-yml/pull/79)
+- `brand.yml` [R :package: [(en development)]{.make-smaller}](https://github.com/posit-dev/brand-yml/pull/79)
 :::
 
 # En savoir plus sur brand.yml
