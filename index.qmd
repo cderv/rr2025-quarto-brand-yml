@@ -288,7 +288,7 @@ defaults:
 :  Logos pour l'image de marque de l'organisation.
 
 [`defaults`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/defaults.html)
-:   Options pour support spécifiques par des outils utilsant `_brand.yml`
+:   Options pour support spécifiques par des outils utilisant `_brand.yml`
 :::
 :::
 :::
@@ -359,7 +359,6 @@ Si le fichier existe, il est automatiquement utilisé par Quarto.
 
 Configuration dans `_quarto.yml` ou dans le document
 
-::: {.r-fit-text}
 ::: {.bottom-pad .top-pad}
 ````yaml
 # fichier à une place differente
@@ -380,7 +379,6 @@ brand: brand/_brand-pulse.yml
 # désactiver
 brand: false
 ```
-:::
 :::
 
 ::: {.footer}
@@ -409,6 +407,133 @@ brand:
 
 ::: {.footer}
 [Multiformat branding with Quarto](https://quarto.org/docs/authoring/brand.html)
+:::
+
+# Support spécifique Quarto
+
+## Intégration avec les thèmes Quarto {auto-animate="true"}
+
+[Quarto Themes](https://quarto.org/docs/output-formats/html-themes.html) pour `format: html`.
+
+::: {data-id='equiv' .hidden-element }
+équivalent avec un `_brand.yml` à
+:::
+
+::: {data-id='equiv' .hidden-element }
+mais l'ordre peut être important: [Quarto Themes Layering](https://quarto.org/docs/output-formats/html-themes-more.html)
+:::
+
+````yaml
+theme:
+  - cosmo       # Un thème bootswatch 
+  - tweaks.scss # Une personalisation par l'utlisateur
+````
+
+::: {.footer}
+<https://quarto.org/docs/output-formats/html-themes.html>
+:::
+
+## Intégration avec les thèmes Quarto {auto-animate="true"}
+
+[Quarto Themes](https://quarto.org/docs/output-formats/html-themes.html) pour `format: html`.
+
+::: {data-id='equiv'}
+équivalent avec un `_brand.yml`
+:::
+
+::: {data-id='equiv' .hidden-element }
+mais l'ordre peut être important: [Quarto Themes Layering](https://quarto.org/docs/output-formats/html-themes-more.html)
+:::
+
+````yaml
+theme:
+  - brand       # theme dérivé du `_brand.yml`
+  - cosmo       # Un thème bootswatch 
+  - tweaks.scss # Une personalisation par l'utlisateur
+````
+
+::: {.footer}
+<https://quarto.org/docs/output-formats/html-themes.html>
+:::
+
+## Intégration avec les thèmes Quarto {auto-animate="true"}
+
+[Quarto Themes](https://quarto.org/docs/output-formats/html-themes.html) pour `format: html`.
+
+::: {data-id='equiv'}
+équivalent avec un `_brand.yml`
+:::
+
+::: {data-id='equiv' .hidden-element }
+mais l'ordre peut être important: [Quarto Themes Layering](https://quarto.org/docs/output-formats/html-themes-more.html)
+:::
+
+
+````yaml
+theme:
+  - cosmo       # Un thème bootswatch 
+  - brand       # theme dérivé du `_brand.yml`
+  - tweaks.scss # Une personalisation par l'utlisateur
+````
+
+::: {.notes}
+Mais l'ordre est important!
+:::
+
+::: {.footer}
+<https://quarto.org/docs/output-formats/html-themes.html>
+:::
+
+## Thèmes Clair et Sombre pour HTML
+
+::: {.top-margin .bottom-margin}
+````{.yaml}
+brand:
+  light: light-brand.yml
+  dark: dark-brand.yml
+````
+:::
+
+::: {.top-margin .bottom-margin}
+````{.yaml}
+brand:
+  light:
+    color:
+      background: "#ffffff"
+      foreground: "#333333"
+  dark:
+    color:
+      background: "#333333"
+      foreground: "#ffffff"
+````
+:::
+
+## Typst CSS
+
+Une fonctionnalité Quarto 1.7 qui permet de convertir des propriétés CSS en propriété Typst. 
+
+Avantage: Style similaire entre format HTML et format Typst.
+
+- Variable pour template: `brand-color` et `brand-background-color`  
+  Exemple: Rectangle avec la couleur primaire
+
+  ````markdown
+  ```{=typst}
+  #rect(fill: brand-color.primary)
+  ```
+  ````
+
+- choix du mode sombre ou clair à utiliser
+
+  ````yaml
+  format:
+    typst:
+      brand-mode: dark
+  ````
+
+
+::: {.footer}
+[Typst CSS](https://quarto.org/docs/advanced/typst/typst-css.html) & [Typst Brand.yaml](https://quarto.org/docs/advanced/typst/brand-yaml.html)
 :::
 
 # Pour résumer
