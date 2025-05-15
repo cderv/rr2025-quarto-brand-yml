@@ -163,11 +163,11 @@ meta:
 :::
 ::: {.column width="35%"}
 
-::: {.make-smaller style='margin-top: 2em;' data-id="spec"}
-[`meta`]{.hl}
+::: {.make-smaller style='margin-top: 2em;'}
+::: {data-id="meta"}
+[`meta`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/meta.html)
 :   Information de l'organization, nom de l'entreprise, URLs, etc.
-
-    :link: [Brand.yml meta Spec](https://posit-dev.github.io/brand-yml/brand/meta.html)
+:::
 :::
 :::
 :::
@@ -183,11 +183,15 @@ color:
 ```
 :::
 ::: {.column width="35%"}
-::: {.make-smaller style='margin-top: 2em;' data-id="spec"}
-[`color`]{.hl}
+::: {.make-smaller style='margin-top: 2em;'}
+::: {data-id="meta"}
+[`meta`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/meta.html)
+:   Information de l'organization, nom de l'entreprise, URLs, etc.
+:::
+::: {data-id="color"}
+[`color`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/color.html)
 :   Palette de couleurs de l'image de marque de l'organisation.
-
-    :link: [Brand.yml Color Spec](https://posit-dev.github.io/brand-yml/brand/color.html)
+:::
 :::
 :::
 :::
@@ -206,11 +210,15 @@ typography:
 ```
 :::
 ::: {.column width="35%"}
-::: {.make-smaller style='margin-top: 2em;' data-id="spec"}
-[`typography`]{.hl}
+::: {.make-smaller style='margin-top: 2em;'}
+[`meta`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/meta.html)
+:   Information de l'organization, nom de l'entreprise, URLs, etc.
+
+[`color`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/color.html)
+:   Palette de couleurs de l'image de marque de l'organisation.
+
+[`typography`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/typography.html)
 :   Polices pour les différents éléments.
-    
-    :link: [Brand.yml Typography Spec](https://posit-dev.github.io/brand-yml/brand/typography.html)
 :::
 :::
 :::
@@ -231,11 +239,18 @@ logo:
 ```
 :::
 ::: {.column width="35%"}
-::: {.make-smaller style='margin-top: 2em;' data-id="spec"}
-[`logo`]{.hl}
+::: {.make-smaller style='margin-top: 2em;'}
+[`meta`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/meta.html)
+:   Information de l'organization, nom de l'entreprise, URLs, etc.
+
+[`color`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/color.html)
+:   Palette de couleurs de l'image de marque de l'organisation.
+
+[`typography`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/typography.html)
+:   Polices pour les différents éléments.
+
+[`logo`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/logo.html)
 :  Logos pour l'image de marque de l'organisation.
-   
-   :link: [Brand.yml Logo Spec](https://posit-dev.github.io/brand-yml/brand/logo.html)
 :::
 :::
 :::
@@ -259,11 +274,21 @@ defaults:
 :::
 ::: {.column width="35%"}
 
-::: {.make-smaller style='margin-top: 2em;' data-id="spec"}
-[`defaults`]{.hl}
-:   Options pour support spécifiques par des outils utilsant `_brand.yml`
+::: {.make-smaller style='margin-top: 2em;'}
+[`meta`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/meta.html)
+:   Information de l'organization, nom de l'entreprise, URLs, etc.
 
-    :link: [Brand.yml Defaults Spec](https://posit-dev.github.io/brand-yml/brand/defaults.html)
+[`color`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/color.html)
+:   Palette de couleurs de l'image de marque de l'organisation.
+
+[`typography`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/typography.html)
+:   Polices pour les différents éléments.
+
+[`logo`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/logo.html)
+:  Logos pour l'image de marque de l'organisation.
+
+[`defaults`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/defaults.html)
+:   Options pour support spécifiques par des outils utilsant `_brand.yml`
 :::
 :::
 :::
