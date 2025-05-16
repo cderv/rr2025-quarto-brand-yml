@@ -31,5 +31,16 @@
       console.log("Showing logo")
       document.querySelector("div.has-logo > img.slide-logo").style.display = null;
     }
+
+    // restart gif background
+    // from https://github.com/hakimel/reveal.js/blob/eb95b14531a1d52a616553759bd1c383cc1d01fc/js/controllers/backgrounds.js#L381-L385
+    var currentBackgroundContent = event.currentSlide.slideBackgroundContentElement;
+    let backgroundImageURL = currentBackgroundContent.style.backgroundImage || '';
+    // Restart GIFs (doesn't work in Firefox)
+    if( /\.gif/i.test( backgroundImageURL ) ) {
+      currentBackgroundContent.style.backgroundImage = '';
+      window.getComputedStyle( currentBackgroundContent ).opacity;
+      currentBackgroundContent.style.backgroundImage = backgroundImageURL;
+    }
   });
 </script>
