@@ -51,7 +51,7 @@ Un système de publication scientifique et technique open-source, intégrant l'e
 
 **Quarto est l'évolution de R Markdown**
 
-- il unifie et améliore l'écosystème R Markdown, pour les utilsateurs R.
+- il unifie et améliore l'écosystème R Markdown, pour les utilisateurs R.
 - il l'étend pour les personnes qui ne connaissent pas R Markdown (Python, Julia, Observable, ...)
 
 ![](images/horst_quarto_schematic.png){fig-alt="Un schéma représentant la polyvalence de Quarto avec des entrées multi-langages (comme Python, R, Observable, Julia) et des sorties multi-formats (comme PDF, html, documents Word, et plus)." fig-align="center" width="40%"}
@@ -84,7 +84,7 @@ format: typst
 
 ## {background-image="images/typst-no-brand.gif" background-size="contain" background-transition="concave" footer=false}
 
-# Déja bien, mais... {transition="convex"}
+# Déjà bien, mais... {transition="convex"}
 
 ::: {.bigger}
 Les organisations ont besoin de **personnaliser** leurs documents selon leur **charte graphique**.
@@ -288,7 +288,7 @@ defaults:
 :  Logos pour l'image de marque de l'organisation.
 
 [`defaults`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/defaults.html)
-:   Options pour support spécifiques par des outils utilisant `_brand.yml`
+:   Options pour le support spécifique par des outils utilisant `_brand.yml`
 :::
 :::
 :::
@@ -340,7 +340,7 @@ logo:
 
 ## `_brand.yml` avec Quarto {.bigger}
 
-A mettre à la racine du projet Quarto
+À mettre à la racine du projet Quarto
 
 ````
 .
@@ -361,7 +361,7 @@ Configuration dans `_quarto.yml` ou dans le document
 
 ::: {.bottom-pad .top-pad}
 ````yaml
-# fichier à une place differente
+# fichier à une place différente
 brand: brand/_brand.yml
 ````
 :::
@@ -572,7 +572,7 @@ Avec des options communes:
 
 - Respect de la specification `_brand.yml`
 
-- Support specifiques
+- Supports spécifiques
   - `brand.defaults.bootstrap` pour Quarto et Shiny
   - `brand.defaults.shiny.theme` pour Shiny
 
