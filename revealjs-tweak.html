@@ -22,12 +22,12 @@
       }
     });
   });
-  Reveal.addEventListener('slidechanged', (event) => {
-    if (event.indexh === 0) {
+  Reveal.on('slidechanged', (event) => {
+    if (event.indexh === 0 && event.indexv === 0) {
       console.log("Hiding logo")
       document.querySelector("div.has-logo > img.slide-logo").style.setProperty('display', 'none', 'important');
     }
-    if (event.indexh === 1) { 
+    if (event.indexh === 1 ||(event.indexh === 0 && event.indexv === 1)) { 
       console.log("Showing logo")
       document.querySelector("div.has-logo > img.slide-logo").style.display = null;
     }
