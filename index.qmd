@@ -295,7 +295,7 @@ defaults:
 
 ## Pulse Mobile Brand {.bigger}
 
-```{.yml filename="_brand.yml" code-line-numbers="1-3|5-15|17-31|33-40"}
+```{.yml filename="_brand.yml" code-line-numbers="1-3|5-13|14-15|17-24|25-31|33-37|38-40"}
 meta:
   name: Pulse Mobile
   link: https://pulse.mobile
@@ -340,6 +340,10 @@ logo:
 
 ## `_brand.yml` avec Quarto {.bigger}
 
+## `_brand.yml` avec Quarto {.bigger}
+
+### Pris en compte par défaut
+
 À mettre à la racine du projet Quarto
 
 ````
@@ -355,9 +359,11 @@ Si le fichier existe, il est automatiquement utilisé par Quarto.
 [Multiformat branding with Quarto](https://quarto.org/docs/authoring/brand.html)
 :::
 
-## `_brand.yml` avec Quarto {.bigger}
+## `_brand.yml` avec Quarto {.bigger auto-animate="true"}
 
-Configuration dans `_quarto.yml` ou dans le document
+### Configurations possibles
+
+Dans le document ou le `_quarto.yml`
 
 ::: {.bottom-pad .top-pad}
 ````yaml
@@ -385,8 +391,11 @@ brand: false
 [Multiformat branding with Quarto](https://quarto.org/docs/authoring/brand.html)
 :::
 
-## `_brand.yml` avec Quarto {.bigger}
-Configuration dans `_quarto.yml` ou dans le document
+## `_brand.yml` avec Quarto {.bigger auto-animate="true"}
+
+### Configurations possibles
+
+Dans le document ou le `_quarto.yml`
 
 ::: {.make-smaller}
 ```yaml
@@ -409,9 +418,9 @@ brand:
 [Multiformat branding with Quarto](https://quarto.org/docs/authoring/brand.html)
 :::
 
-# Support spécifique Quarto
+# Support spécifique à Quarto
 
-## Intégration avec les thèmes Quarto {auto-animate="true"}
+## Intégration avec les thèmes Quarto {.make-h1 auto-animate="true"}
 
 [Quarto Themes](https://quarto.org/docs/output-formats/html-themes.html) pour `format: html`.
 
@@ -419,21 +428,23 @@ brand:
 équivalent avec un `_brand.yml` à
 :::
 
-::: {data-id='equiv' .hidden-element }
+::: {data-id='ordre' .hidden-element }
 mais l'ordre peut être important: [Quarto Themes Layering](https://quarto.org/docs/output-formats/html-themes-more.html)
 :::
 
+::: {style="margin-top: 4rem;"}
 ````yaml
 theme:
   - cosmo       # Un thème bootswatch 
   - tweaks.scss # Une personalisation par l'utlisateur
 ````
+:::
 
 ::: {.footer}
 <https://quarto.org/docs/output-formats/html-themes.html>
 :::
 
-## Intégration avec les thèmes Quarto {auto-animate="true"}
+## Intégration avec les thèmes Quarto {.make-h1 auto-animate="true"}
 
 [Quarto Themes](https://quarto.org/docs/output-formats/html-themes.html) pour `format: html`.
 
@@ -441,22 +452,24 @@ theme:
 équivalent avec un `_brand.yml`
 :::
 
-::: {data-id='equiv' .hidden-element }
+::: {data-id='ordre' .hidden-element }
 mais l'ordre peut être important: [Quarto Themes Layering](https://quarto.org/docs/output-formats/html-themes-more.html)
 :::
 
+::: {style="margin-top: 4rem;"}
 ````yaml
 theme:
   - brand       # theme dérivé du `_brand.yml`
   - cosmo       # Un thème bootswatch 
   - tweaks.scss # Une personalisation par l'utlisateur
 ````
+:::
 
 ::: {.footer}
 <https://quarto.org/docs/output-formats/html-themes.html>
 :::
 
-## Intégration avec les thèmes Quarto {auto-animate="true"}
+## Intégration avec les thèmes Quarto {.make-h1 auto-animate="true"}
 
 [Quarto Themes](https://quarto.org/docs/output-formats/html-themes.html) pour `format: html`.
 
@@ -464,28 +477,35 @@ theme:
 équivalent avec un `_brand.yml`
 :::
 
-::: {data-id='equiv' .hidden-element }
-mais l'ordre peut être important: [Quarto Themes Layering](https://quarto.org/docs/output-formats/html-themes-more.html)
+::: {data-id='ordre' }
+mais l'ordre peut être important :arrow_right: [Quarto Themes Layering](https://quarto.org/docs/output-formats/html-themes-more.html)
 :::
 
 
+::: {style="margin-top: 4rem;"}
 ````yaml
 theme:
   - cosmo       # Un thème bootswatch 
   - brand       # theme dérivé du `_brand.yml`
   - tweaks.scss # Une personalisation par l'utlisateur
 ````
-
-::: {.notes}
-Mais l'ordre est important!
 :::
 
 ::: {.footer}
 <https://quarto.org/docs/output-formats/html-themes.html>
 :::
 
-## Thèmes Clair et Sombre pour HTML
+## Thèmes Clair et Sombre pour HTML {.make-h1}
 
+::: {.fragment .top-margin .bottom-margin}
+````{.yaml}
+theme:
+  light: flatly
+  dark: darkly
+````
+:::
+
+::: {.fragment}
 ::: {.top-margin .bottom-margin}
 ````{.yaml}
 brand:
@@ -507,12 +527,23 @@ brand:
       foreground: "#ffffff"
 ````
 :::
+:::
 
-## Typst CSS
+# Support pour PDF avec Typst
 
-Une fonctionnalité Quarto 1.7 qui permet de convertir des propriétés CSS en propriété Typst. 
+## Typst CSS {.make-h1}
 
-Avantage: Style similaire entre format HTML et format Typst.
+Une fonctionnalité Quarto 1.5 qui permet de convertir des propriétés CSS en propriétés Typst. 
+
+Avantage :arrow_right: Style similaire entre format HTML et format Typst.
+
+**Exemple** [(Typst à droite / HTML à gauche)]{.make-smaller}
+
+![](images/great_tables-typst-html.png){.illustration .r-stretch .center-image fig-align="center" fig-alt="Un exemple de tableau crée un great_tables python package avec des styles similaires en HTML et Typst."}
+
+## Typst CSS {.make-h1}
+
+### Adaptation pour `_brand.yml`
 
 - Variable pour template: `brand-color` et `brand-background-color`  
   Exemple: Rectangle avec la couleur primaire
@@ -524,6 +555,14 @@ Avantage: Style similaire entre format HTML et format Typst.
   ````
 
 - choix du mode sombre ou clair à utiliser
+
+  ::: {.bottom-margin}
+  ````{.yaml}
+  brand:
+    light: light-brand.yml
+    dark: dark-brand.yml
+  ````
+  :::
 
   ````yaml
   format:
@@ -567,9 +606,9 @@ From ['Theming Made Easy: Introducing Brand YAML for Shiny'](https://slides.garr
 
 ## Un seul fichier à réutiliser {.make-h1}
 
-::: {.bigger}
-Avec des options communes: 
+### Avec des options communes
 
+::: {.bigger}
 - Respect de la specification `_brand.yml`
 
 - Supports spécifiques
@@ -632,7 +671,7 @@ brand <- attr(bslib::bs_theme(), "brand")
 ```
 :::
 
-## Un seul fichier à réutiliser {.make-h1}
+## Un seul fichier à éditer {.make-h1}
 
 ::: {.incremental .r-fit-text}
 - Positron, VS Code, RStudio
