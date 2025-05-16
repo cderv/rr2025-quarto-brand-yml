@@ -216,7 +216,7 @@
 <p>Un système de publication scientifique et technique open-source, intégrant l’exécution de code.</p>
 <p><strong>Quarto est l’évolution de R Markdown</strong></p>
 <ul>
-<li>il unifie et améliore l’écosystème R Markdown, pour les utilsateurs R.</li>
+<li>il unifie et améliore l’écosystème R Markdown, pour les utilisateurs R.</li>
 <li>il l’étend pour les personnes qui ne connaissent pas R Markdown (Python, Julia, Observable, …)</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
@@ -253,8 +253,8 @@
 <h2></h2>
 </section></section>
 <section>
-<section id="déja-bien-mais" class="title-slide slide level1 center" data-transition="convex">
-<h1>Déja bien, mais…</h1>
+<section id="déjà-bien-mais" class="title-slide slide level1 center" data-transition="convex">
+<h1>Déjà bien, mais…</h1>
 <div class="bigger">
 <p>Les organisations ont besoin de <strong>personnaliser</strong> leurs documents selon leur <strong>charte graphique</strong>.</p>
 </div>
@@ -511,7 +511,7 @@ Logos pour l’image de marque de l’organisation.
 </dd>
 <dt><span class="hl"><code>defaults</code></span> <span class="emoji" data-emoji="link">🔗</span> <a href="https://posit-dev.github.io/brand-yml/brand/defaults.html">Spec</a></dt>
 <dd>
-Options pour support spécifiques par des outils utilisant <code>_brand.yml</code>
+Options pour le support spécifique par des outils utilisant <code>_brand.yml</code>
 </dd>
 </dl>
 </div>
@@ -523,7 +523,7 @@ Options pour support spécifiques par des outils utilisant <code>_brand.yml</cod
 <div class="code-with-filename-file">
 <pre><strong>_brand.yml</strong></pre>
 </div>
-<div class="sourceCode" id="cb10" data-filename="_brand.yml" data-code-line-numbers="1-3|5-15|17-31|33-40"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href=""></a><span class="fu">meta</span><span class="kw">:</span></span>
+<div class="sourceCode" id="cb10" data-filename="_brand.yml" data-code-line-numbers="1-3|5-13|14-15|17-24|25-31|33-37|38-40"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href=""></a><span class="fu">meta</span><span class="kw">:</span></span>
 <span id="cb10-2"><a href=""></a><span class="at">  </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Pulse Mobile</span></span>
 <span id="cb10-3"><a href=""></a><span class="at">  </span><span class="fu">link</span><span class="kw">:</span><span class="at"> https://pulse.mobile</span></span>
 <span id="cb10-4"><a href=""></a></span>
@@ -567,7 +567,11 @@ Options pour support spécifiques par des outils utilisant <code>_brand.yml</cod
 </section>
 <section id="brand.yml-avec-quarto" class="slide level2 bigger">
 <h2><code>_brand.yml</code> avec Quarto</h2>
-<p>A mettre à la racine du projet Quarto</p>
+</section>
+<section id="brand.yml-avec-quarto-1" class="slide level2 bigger">
+<h2><code>_brand.yml</code> avec Quarto</h2>
+<h3 id="pris-en-compte-par-défaut">Pris en compte par défaut</h3>
+<p>À mettre à la racine du projet Quarto</p>
 <pre><code>.
 ├── report.qmd
 ├── _brand.yml
@@ -577,11 +581,12 @@ Options pour support spécifiques par des outils utilisant <code>_brand.yml</cod
 <p><a href="https://quarto.org/docs/authoring/brand.html">Multiformat branding with Quarto</a></p>
 </div>
 </section>
-<section id="brand.yml-avec-quarto-1" class="slide level2 bigger">
-<h2><code>_brand.yml</code> avec Quarto</h2>
-<p>Configuration dans <code>_quarto.yml</code> ou dans le document</p>
+<section id="brand.yml-avec-quarto-2" class="slide level2 bigger" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><code>_brand.yml</code> avec Quarto</h2>
+<h3 id="configurations-possibles">Configurations possibles</h3>
+<p>Dans le document ou le <code>_quarto.yml</code></p>
 <div class="bottom-pad top-pad">
-<div class="sourceCode" id="cb12"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co"># fichier à une place differente</span></span>
+<div class="sourceCode" id="cb12"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co"># fichier à une place différente</span></span>
 <span id="cb12-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">brand</span><span class="kw">:</span><span class="at"> brand/_brand.yml</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="bottom-pad top-pad">
@@ -596,128 +601,145 @@ Options pour support spécifiques par des outils utilisant <code>_brand.yml</cod
 <p><a href="https://quarto.org/docs/authoring/brand.html">Multiformat branding with Quarto</a></p>
 </div>
 </section>
-<section id="brand.yml-avec-quarto-2" class="slide level2 bigger">
-<h2><code>_brand.yml</code> avec Quarto</h2>
-<p>Configuration dans <code>_quarto.yml</code> ou dans le document</p>
+<section id="brand.yml-avec-quarto-3" class="slide level2 bigger" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"><code>_brand.yml</code> avec Quarto</h2>
+<h3 id="configurations-possibles-1">Configurations possibles</h3>
+<p>Dans le document ou le <code>_quarto.yml</code></p>
 <div class="make-smaller">
-<div class="sourceCode" id="cb15"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb15-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">brand</span><span class="kw">:</span></span>
-<span id="cb15-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">color</span><span class="kw">:</span></span>
-<span id="cb15-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">palette</span><span class="kw">:</span></span>
-<span id="cb15-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">purple</span><span class="kw">:</span><span class="at"> </span><span class="st">"#8a2be2"</span></span>
-<span id="cb15-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">primary</span><span class="kw">:</span><span class="at"> purple</span></span>
-<span id="cb15-6"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">typography</span><span class="kw">:</span></span>
-<span id="cb15-7"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">fonts</span><span class="kw">:</span></span>
-<span id="cb15-8"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Montserrat Alternates</span></span>
-<span id="cb15-9"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">source</span><span class="kw">:</span><span class="at"> google</span></span>
-<span id="cb15-10"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">headings</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb15-11"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Montserrat Alternates</span></span>
-<span id="cb15-12"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="dv">500</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode yaml code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb15-1" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">brand</span><span class="kw">:</span></span>
+<span id="cb15-2" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">color</span><span class="kw">:</span></span>
+<span id="cb15-3" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">palette</span><span class="kw">:</span></span>
+<span id="cb15-4" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">purple</span><span class="kw">:</span><span class="at"> </span><span class="st">"#8a2be2"</span></span>
+<span id="cb15-5" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">primary</span><span class="kw">:</span><span class="at"> purple</span></span>
+<span id="cb15-6" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">typography</span><span class="kw">:</span></span>
+<span id="cb15-7" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">fonts</span><span class="kw">:</span></span>
+<span id="cb15-8" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Montserrat Alternates</span></span>
+<span id="cb15-9" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">source</span><span class="kw">:</span><span class="at"> google</span></span>
+<span id="cb15-10" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">headings</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb15-11" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">family</span><span class="kw">:</span><span class="at"> Montserrat Alternates</span></span>
+<span id="cb15-12" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">weight</span><span class="kw">:</span><span class="at"> </span><span class="dv">500</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="footer">
 <p><a href="https://quarto.org/docs/authoring/brand.html">Multiformat branding with Quarto</a></p>
 </div>
 </section></section>
 <section>
-<section id="support-spécifique-quarto" class="title-slide slide level1 center">
-<h1>Support spécifique Quarto</h1>
+<section id="support-spécifique-à-quarto" class="title-slide slide level1 center">
+<h1>Support spécifique à Quarto</h1>
 
 </section>
-<section id="intégration-avec-les-thèmes-quarto" class="slide level2" data-auto-animate="true">
+<section id="intégration-avec-les-thèmes-quarto" class="slide level2 make-h1" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Intégration avec les thèmes Quarto</h2>
 <p><a href="https://quarto.org/docs/output-formats/html-themes.html">Quarto Themes</a> pour <code>format: html</code>.</p>
 <div class="hidden-element" data-id="equiv">
 <p>équivalent avec un <code>_brand.yml</code> à</p>
 </div>
-<div class="hidden-element" data-id="equiv">
+<div class="hidden-element" data-id="ordre">
 <p>mais l’ordre peut être important: <a href="https://quarto.org/docs/output-formats/html-themes-more.html">Quarto Themes Layering</a></p>
 </div>
+<div style="margin-top: 4rem;">
 <div class="sourceCode" id="cb16"><pre class="sourceCode yaml code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb16-1" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span><span class="kw">:</span></span>
 <span id="cb16-2" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> cosmo</span><span class="co">       # Un thème bootswatch </span></span>
 <span id="cb16-3" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> tweaks.scss</span><span class="co"> # Une personalisation par l'utlisateur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <div class="footer">
 <p><a href="https://quarto.org/docs/output-formats/html-themes.html" class="uri">https://quarto.org/docs/output-formats/html-themes.html</a></p>
 </div>
 </section>
-<section id="intégration-avec-les-thèmes-quarto-1" class="slide level2" data-auto-animate="true">
+<section id="intégration-avec-les-thèmes-quarto-1" class="slide level2 make-h1" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Intégration avec les thèmes Quarto</h2>
 <p><a href="https://quarto.org/docs/output-formats/html-themes.html">Quarto Themes</a> pour <code>format: html</code>.</p>
 <div data-id="equiv">
 <p>équivalent avec un <code>_brand.yml</code></p>
 </div>
-<div class="hidden-element" data-id="equiv">
+<div class="hidden-element" data-id="ordre">
 <p>mais l’ordre peut être important: <a href="https://quarto.org/docs/output-formats/html-themes-more.html">Quarto Themes Layering</a></p>
 </div>
+<div style="margin-top: 4rem;">
 <div class="sourceCode" id="cb17"><pre class="sourceCode yaml code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb17-1" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span><span class="kw">:</span></span>
 <span id="cb17-2" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> brand</span><span class="co">       # theme dérivé du `_brand.yml`</span></span>
 <span id="cb17-3" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> cosmo</span><span class="co">       # Un thème bootswatch </span></span>
 <span id="cb17-4" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> tweaks.scss</span><span class="co"> # Une personalisation par l'utlisateur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <div class="footer">
 <p><a href="https://quarto.org/docs/output-formats/html-themes.html" class="uri">https://quarto.org/docs/output-formats/html-themes.html</a></p>
 </div>
 </section>
-<section id="intégration-avec-les-thèmes-quarto-2" class="slide level2" data-auto-animate="true">
+<section id="intégration-avec-les-thèmes-quarto-2" class="slide level2 make-h1" data-auto-animate="true">
 <h2 data-id="quarto-animate-title">Intégration avec les thèmes Quarto</h2>
 <p><a href="https://quarto.org/docs/output-formats/html-themes.html">Quarto Themes</a> pour <code>format: html</code>.</p>
 <div data-id="equiv">
 <p>équivalent avec un <code>_brand.yml</code></p>
 </div>
-<div class="hidden-element" data-id="equiv">
-<p>mais l’ordre peut être important: <a href="https://quarto.org/docs/output-formats/html-themes-more.html">Quarto Themes Layering</a></p>
+<div data-id="ordre">
+<p>mais l’ordre peut être important <span class="emoji" data-emoji="arrow_right">➡️</span> <a href="https://quarto.org/docs/output-formats/html-themes-more.html">Quarto Themes Layering</a></p>
 </div>
+<div style="margin-top: 4rem;">
 <div class="sourceCode" id="cb18"><pre class="sourceCode yaml code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb18-1" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span><span class="kw">:</span></span>
 <span id="cb18-2" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> cosmo</span><span class="co">       # Un thème bootswatch </span></span>
 <span id="cb18-3" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> brand</span><span class="co">       # theme dérivé du `_brand.yml`</span></span>
 <span id="cb18-4" class="hljs-ln-code"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> tweaks.scss</span><span class="co"> # Une personalisation par l'utlisateur</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<aside class="notes">
-<p>Mais l’ordre est important!</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+</div>
 <div class="footer">
 <p><a href="https://quarto.org/docs/output-formats/html-themes.html" class="uri">https://quarto.org/docs/output-formats/html-themes.html</a></p>
 </div>
 </section>
-<section id="thèmes-clair-et-sombre-pour-html" class="slide level2">
+<section id="thèmes-clair-et-sombre-pour-html" class="slide level2 make-h1">
 <h2>Thèmes Clair et Sombre pour HTML</h2>
-<div class="top-margin bottom-margin">
-<div class="sourceCode" id="cb19"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb19-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">brand</span><span class="kw">:</span></span>
-<span id="cb19-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">light</span><span class="kw">:</span><span class="at"> light-brand.yml</span></span>
-<span id="cb19-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> dark-brand.yml</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment top-margin bottom-margin">
+<div class="sourceCode" id="cb19"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb19-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">theme</span><span class="kw">:</span></span>
+<span id="cb19-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">light</span><span class="kw">:</span><span class="at"> flatly</span></span>
+<span id="cb19-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> darkly</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="fragment">
 <div class="top-margin bottom-margin">
 <div class="sourceCode" id="cb20"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb20-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">brand</span><span class="kw">:</span></span>
-<span id="cb20-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">light</span><span class="kw">:</span></span>
-<span id="cb20-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">color</span><span class="kw">:</span></span>
-<span id="cb20-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">background</span><span class="kw">:</span><span class="at"> </span><span class="st">"#ffffff"</span></span>
-<span id="cb20-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">foreground</span><span class="kw">:</span><span class="at"> </span><span class="st">"#333333"</span></span>
-<span id="cb20-6"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">dark</span><span class="kw">:</span></span>
-<span id="cb20-7"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">color</span><span class="kw">:</span></span>
-<span id="cb20-8"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">background</span><span class="kw">:</span><span class="at"> </span><span class="st">"#333333"</span></span>
-<span id="cb20-9"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">foreground</span><span class="kw">:</span><span class="at"> </span><span class="st">"#ffffff"</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">light</span><span class="kw">:</span><span class="at"> light-brand.yml</span></span>
+<span id="cb20-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> dark-brand.yml</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="top-margin bottom-margin">
+<div class="sourceCode" id="cb21"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb21-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">brand</span><span class="kw">:</span></span>
+<span id="cb21-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">light</span><span class="kw">:</span></span>
+<span id="cb21-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">color</span><span class="kw">:</span></span>
+<span id="cb21-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">background</span><span class="kw">:</span><span class="at"> </span><span class="st">"#ffffff"</span></span>
+<span id="cb21-5"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">foreground</span><span class="kw">:</span><span class="at"> </span><span class="st">"#333333"</span></span>
+<span id="cb21-6"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">dark</span><span class="kw">:</span></span>
+<span id="cb21-7"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">color</span><span class="kw">:</span></span>
+<span id="cb21-8"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">background</span><span class="kw">:</span><span class="at"> </span><span class="st">"#333333"</span></span>
+<span id="cb21-9"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">foreground</span><span class="kw">:</span><span class="at"> </span><span class="st">"#ffffff"</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="support-pour-pdf-avec-typst" class="title-slide slide level1 center">
+<h1>Support pour PDF avec Typst</h1>
+
 </section>
-<section id="typst-css" class="slide level2">
+<section id="typst-css" class="slide level2 make-h1">
 <h2>Typst CSS</h2>
-<p>Une fonctionnalité Quarto 1.7 qui permet de convertir des propriétés CSS en propriété Typst.</p>
-<p>Avantage: Style similaire entre format HTML et format Typst.</p>
+<p>Une fonctionnalité Quarto 1.5 qui permet de convertir des propriétés CSS en propriétés Typst.</p>
+<p>Avantage <span class="emoji" data-emoji="arrow_right">➡️</span> Style similaire entre format HTML et format Typst.</p>
+<p><strong>Exemple</strong> <span class="make-smaller">(Typst à droite / HTML à gauche)</span></p>
+
+<img data-src="images/great_tables-typst-html.png" class="illustration r-stretch center-image quarto-figure quarto-figure-center" alt="Un exemple de tableau crée un great_tables python package avec des styles similaires en HTML et Typst."></section>
+<section id="typst-css-1" class="slide level2 make-h1">
+<h2>Typst CSS</h2>
+<h3 id="adaptation-pour-_brand.yml">Adaptation pour <code>_brand.yml</code></h3>
 <ul>
 <li><p>Variable pour template: <code>brand-color</code> et <code>brand-background-color</code><br>
 Exemple: Rectangle avec la couleur primaire</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="in">```{=typst}</span></span>
-<span id="cb21-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="in">#rect(fill: brand-color.primary)</span></span>
-<span id="cb21-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="sourceCode" id="cb22"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="in">```{=typst}</span></span>
+<span id="cb22-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="in">#rect(fill: brand-color.primary)</span></span>
+<span id="cb22-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 <li><p>choix du mode sombre ou clair à utiliser</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb22-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb22-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">typst</span><span class="kw">:</span></span>
-<span id="cb22-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">brand-mode</span><span class="kw">:</span><span class="at"> dark</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="bottom-margin">
+<div class="sourceCode" id="cb23"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb23-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">brand</span><span class="kw">:</span></span>
+<span id="cb23-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">light</span><span class="kw">:</span><span class="at"> light-brand.yml</span></span>
+<span id="cb23-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> dark-brand.yml</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb24-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb24-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">typst</span><span class="kw">:</span></span>
+<span id="cb24-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">brand-mode</span><span class="kw">:</span><span class="at"> dark</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul>
 <div class="footer">
 <p><a href="https://quarto.org/docs/advanced/typst/typst-css.html">Typst CSS</a> &amp; <a href="https://quarto.org/docs/advanced/typst/brand-yaml.html">Typst Brand.yaml</a></p>
@@ -753,11 +775,11 @@ Exemple: Rectangle avec la couleur primaire</p>
 </section>
 <section id="un-seul-fichier-à-réutiliser-1" class="slide level2 make-h1">
 <h2>Un seul fichier à réutiliser</h2>
+<h3 id="avec-des-options-communes">Avec des options communes</h3>
 <div class="bigger">
-<p>Avec des options communes:</p>
 <ul>
 <li><p>Respect de la specification <code>_brand.yml</code></p></li>
-<li><p>Support specifiques</p>
+<li><p>Supports spécifiques</p>
 <ul>
 <li><code>brand.defaults.bootstrap</code> pour Quarto et Shiny</li>
 <li><code>brand.defaults.shiny.theme</code> pour Shiny</li>
@@ -772,38 +794,11 @@ Exemple: Rectangle avec la couleur primaire</p>
 <div class="code-with-filename-file">
 <pre><strong>lire _brand.yml avec bslib</strong></pre>
 </div>
-<div class="sourceCode" id="cb23" data-filename="lire _brand.yml avec bslib"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="" aria-hidden="true" tabindex="-1"></a>brand <span class="ot">&lt;-</span> <span class="fu">attr</span>(bslib<span class="sc">::</span><span class="fu">bs_theme</span>(), <span class="st">"brand"</span>) </span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb25" data-filename="lire _brand.yml avec bslib"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="" aria-hidden="true" tabindex="-1"></a>brand <span class="ot">&lt;-</span> <span class="fu">attr</span>(bslib<span class="sc">::</span><span class="fu">bs_theme</span>(), <span class="st">"brand"</span>) </span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
 <section id="un-seul-fichier-à-réutiliser-3" class="slide level2 make-h1">
-<h2>Un seul fichier à réutiliser</h2>
-<div class="bottom-pad" style="margin-top: 2rem;">
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>lire _brand.yml avec bslib</strong></pre>
-</div>
-<div class="sourceCode" id="cb24" data-filename="lire _brand.yml avec bslib"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="" aria-hidden="true" tabindex="-1"></a>brand <span class="ot">&lt;-</span> <span class="fu">attr</span>(bslib<span class="sc">::</span><span class="fu">bs_theme</span>(), <span class="st">"brand"</span>) </span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-<div data-id="code-block" style="font-size: 2.5rem; margin-top: 2rem;">
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>avec gt</strong></pre>
-</div>
-<div class="sourceCode" id="cb25" data-filename="avec gt"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="" aria-hidden="true" tabindex="-1"></a>  gt_tab <span class="sc">|&gt;</span></span>
-<span id="cb25-2"><a href="" aria-hidden="true" tabindex="-1"></a>    gt<span class="sc">::</span><span class="fu">tab_style</span>(</span>
-<span id="cb25-3"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>blue),</span>
-<span id="cb25-4"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">locations =</span> <span class="fu">cells_title</span>()</span>
-<span id="cb25-5"><a href="" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
-<span id="cb25-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_style</span>(</span>
-<span id="cb25-7"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>purple),</span>
-<span id="cb25-8"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">locations =</span> <span class="fu">cells_stub</span>()</span>
-<span id="cb25-9"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section>
-<section id="un-seul-fichier-à-réutiliser-4" class="slide level2 make-h1">
 <h2>Un seul fichier à réutiliser</h2>
 <div class="bottom-pad" style="margin-top: 2rem;">
 <div class="code-with-filename">
@@ -816,22 +811,49 @@ Exemple: Rectangle avec la couleur primaire</p>
 <div data-id="code-block" style="font-size: 2.5rem; margin-top: 2rem;">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
-<pre><strong>avec ggplot2</strong></pre>
+<pre><strong>avec gt</strong></pre>
 </div>
-<div class="sourceCode" id="cb27" data-filename="avec ggplot2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="" aria-hidden="true" tabindex="-1"></a>  ggplot_object <span class="sc">+</span></span>
-<span id="cb27-2"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_color_manual</span>(</span>
-<span id="cb27-3"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Participants"</span> <span class="ot">=</span> brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>blue),</span>
-<span id="cb27-4"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">name =</span> <span class="cn">NULL</span></span>
-<span id="cb27-5"><a href="" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb27-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_manual</span>(</span>
-<span id="cb27-7"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Events"</span> <span class="ot">=</span> brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>purple),</span>
-<span id="cb27-8"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">name =</span> <span class="cn">NULL</span></span>
+<div class="sourceCode" id="cb27" data-filename="avec gt"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="" aria-hidden="true" tabindex="-1"></a>  gt_tab <span class="sc">|&gt;</span></span>
+<span id="cb27-2"><a href="" aria-hidden="true" tabindex="-1"></a>    gt<span class="sc">::</span><span class="fu">tab_style</span>(</span>
+<span id="cb27-3"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">style =</span> <span class="fu">cell_fill</span>(<span class="at">color =</span> brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>blue),</span>
+<span id="cb27-4"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">locations =</span> <span class="fu">cells_title</span>()</span>
+<span id="cb27-5"><a href="" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">|&gt;</span></span>
+<span id="cb27-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tab_style</span>(</span>
+<span id="cb27-7"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>purple),</span>
+<span id="cb27-8"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">locations =</span> <span class="fu">cells_stub</span>()</span>
 <span id="cb27-9"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
-<section id="un-seul-fichier-à-réutiliser-5" class="slide level2 make-h1">
+<section id="un-seul-fichier-à-réutiliser-4" class="slide level2 make-h1">
 <h2>Un seul fichier à réutiliser</h2>
+<div class="bottom-pad" style="margin-top: 2rem;">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>lire _brand.yml avec bslib</strong></pre>
+</div>
+<div class="sourceCode" id="cb28" data-filename="lire _brand.yml avec bslib"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="" aria-hidden="true" tabindex="-1"></a>brand <span class="ot">&lt;-</span> <span class="fu">attr</span>(bslib<span class="sc">::</span><span class="fu">bs_theme</span>(), <span class="st">"brand"</span>) </span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div data-id="code-block" style="font-size: 2.5rem; margin-top: 2rem;">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>avec ggplot2</strong></pre>
+</div>
+<div class="sourceCode" id="cb29" data-filename="avec ggplot2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="" aria-hidden="true" tabindex="-1"></a>  ggplot_object <span class="sc">+</span></span>
+<span id="cb29-2"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_color_manual</span>(</span>
+<span id="cb29-3"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Participants"</span> <span class="ot">=</span> brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>blue),</span>
+<span id="cb29-4"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">name =</span> <span class="cn">NULL</span></span>
+<span id="cb29-5"><a href="" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb29-6"><a href="" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_manual</span>(</span>
+<span id="cb29-7"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Events"</span> <span class="ot">=</span> brand<span class="sc">$</span>color<span class="sc">$</span>palette<span class="sc">$</span>purple),</span>
+<span id="cb29-8"><a href="" aria-hidden="true" tabindex="-1"></a>      <span class="at">name =</span> <span class="cn">NULL</span></span>
+<span id="cb29-9"><a href="" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="un-seul-fichier-à-éditer" class="slide level2 make-h1">
+<h2>Un seul fichier à éditer</h2>
 <div class="r-fit-text">
 <ul>
 <li class="fragment"><p>Positron, VS Code, RStudio</p></li>
@@ -1124,7 +1146,7 @@ Exemple: Rectangle avec la couleur primaire</p>
 
       });
 
-      Reveal.addEventListener('slidechanged', (event) => {
+      Reveal.on('slidechanged', (event) => {
 
         if (event.indexh === 0) {
 
