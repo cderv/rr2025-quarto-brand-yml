@@ -8,7 +8,7 @@ format:
     width: 1280
     height: 720
     theme: [default, reveal-style.scss]
-    footer: Follow along at <https://cderv.github.io/rr2025-quarto-brand-yml/> and <https://quarto.org>
+    footer: <https://cderv.github.io/rr2025-quarto-brand-yml/>
     code-line-numbers: false
     slide-number: true
     mermaid-format: png
@@ -166,7 +166,7 @@ meta:
 ::: {.make-smaller style='margin-top: 2em;'}
 ::: {data-id="meta"}
 [`meta`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/meta.html)
-:   Information de l'organization, nom de l'entreprise, URLs, etc.
+:   Information de l'organisation, nom de l'entreprise, URLs, etc.
 :::
 :::
 :::
@@ -186,7 +186,7 @@ color:
 ::: {.make-smaller style='margin-top: 2em;'}
 ::: {data-id="meta"}
 [`meta`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/meta.html)
-:   Information de l'organization, nom de l'entreprise, URLs, etc.
+:   Information de l'organisation, nom de l'entreprise, URLs, etc.
 :::
 ::: {data-id="color"}
 [`color`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/color.html)
@@ -212,7 +212,7 @@ typography:
 ::: {.column width="35%"}
 ::: {.make-smaller style='margin-top: 2em;'}
 [`meta`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/meta.html)
-:   Information de l'organization, nom de l'entreprise, URLs, etc.
+:   Information de l'organisation, nom de l'entreprise, URLs, etc.
 
 [`color`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/color.html)
 :   Palette de couleurs de l'image de marque de l'organisation.
@@ -241,7 +241,7 @@ logo:
 ::: {.column width="35%"}
 ::: {.make-smaller style='margin-top: 2em;'}
 [`meta`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/meta.html)
-:   Information de l'organization, nom de l'entreprise, URLs, etc.
+:   Information de l'organisation, nom de l'entreprise, URLs, etc.
 
 [`color`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/color.html)
 :   Palette de couleurs de l'image de marque de l'organisation.
@@ -276,7 +276,7 @@ defaults:
 
 ::: {.make-smaller style='margin-top: 2em;'}
 [`meta`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/meta.html)
-:   Information de l'organization, nom de l'entreprise, URLs, etc.
+:   Information de l'organisation, nom de l'entreprise, URLs, etc.
 
 [`color`]{.hl} :link: [Spec](https://posit-dev.github.io/brand-yml/brand/color.html)
 :   Palette de couleurs de l'image de marque de l'organisation.
@@ -395,7 +395,7 @@ brand: false
 
 ### Configurations possibles
 
-Dans le document ou le `_quarto.yml`
+Dans le document directement
 
 ::: {.make-smaller}
 ```yaml
@@ -436,7 +436,7 @@ mais l'ordre peut être important: [Quarto Themes Layering](https://quarto.org/d
 ````yaml
 theme:
   - cosmo       # Un thème bootswatch 
-  - tweaks.scss # Une personalisation par l'utlisateur
+  - tweaks.scss # Une personnalisation par l'utilisateur
 ````
 :::
 
@@ -461,7 +461,7 @@ mais l'ordre peut être important: [Quarto Themes Layering](https://quarto.org/d
 theme:
   - brand       # theme dérivé du `_brand.yml`
   - cosmo       # Un thème bootswatch 
-  - tweaks.scss # Une personalisation par l'utlisateur
+  - tweaks.scss # Une personnalisation par l'utilisateur
 ````
 :::
 
@@ -487,7 +487,7 @@ mais l'ordre peut être important :arrow_right: [Quarto Themes Layering](https:/
 theme:
   - cosmo       # Un thème bootswatch 
   - brand       # theme dérivé du `_brand.yml`
-  - tweaks.scss # Une personalisation par l'utlisateur
+  - tweaks.scss # Une personnalisation par l'utilisateur
 ````
 :::
 
@@ -537,9 +537,9 @@ Une fonctionnalité Quarto 1.5 qui permet de convertir des propriétés CSS en p
 
 Avantage :arrow_right: Style similaire entre format HTML et format Typst.
 
-**Exemple** [(Typst à droite / HTML à gauche)]{.make-smaller}
+Exemple [(Typst à gauche / HTML à droite)]{.make-smaller}
 
-![](images/great_tables-typst-html.png){.illustration .r-stretch .center-image fig-align="center" fig-alt="Un exemple de tableau crée un great_tables python package avec des styles similaires en HTML et Typst."}
+![](images/great_tables-typst-html.png){.illustration .r-stretch .center-image fig-align="center" fig-alt="Un exemple de tableau créé avec le package python great_tables, pour des styles similaires en HTML et Typst."}
 
 ## Typst CSS {.make-h1}
 
@@ -609,7 +609,7 @@ From ['Theming Made Easy: Introducing Brand YAML for Shiny'](https://slides.garr
 ### Avec des options communes
 
 ::: {.bigger}
-- Respect de la specification `_brand.yml`
+- Respect de la spécification `_brand.yml`
 
 - Supports spécifiques
   - `brand.defaults.bootstrap` pour Quarto et Shiny
