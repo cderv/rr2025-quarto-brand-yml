@@ -1,5 +1,12 @@
 # Makefile for rendering the website
-SHELL := pwsh.exe
+# Detect OS and set shell accordingly
+ifeq ($(OS),Windows_NT)
+		SHELL := pwsh.exe
+else
+		SHELL := /bin/bash
+endif
+
+.PHONY: check-shell
 
 # Define the output directory
 FREEZE_DIR := _freeze
@@ -13,6 +20,9 @@ PWSH_CMD := pwsh.exe -Command
 
 # Define the target for rendering all the website
 all: render print
+
+check-shell:
+		@echo "Using shell: $(SHELL)"
 
 README.md: _README.qmd
 		$(RENDER_CMD) _README.qmd
