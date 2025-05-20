@@ -25,7 +25,7 @@ revealjs-plugins:
 
 ```{=html}
 <h1 class='title'>Personnaliser ses documents Quarto</h1>
-<p class='subtitle'>A la découverte de `_brand.yml`</p>
+<p class='subtitle'>À la découverte de `_brand.yml`</p>
 ```
 
 ![](images/RR2025hexa.png){.absolute right='400px' bottom='-50px' width="20%"}
