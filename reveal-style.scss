@@ -102,6 +102,10 @@ $presentation-font-size-root: 36px !default;
 
     h3 {
         margin-top: 1em;
+
+        + p {
+            margin-top: 0.5em;
+        }
     }
 
     table {
